@@ -6,3 +6,4 @@ private void update() {
     if (grapplePoint == Vector3.zero) {
          lookdir = tranform.parent.rotation;
 }
+tranform.rotation = Quaternion.Slerp(a:tranform.rotation, b:lookdir, t:Time.deltaTime * speed);
