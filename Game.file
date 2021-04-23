@@ -4,4 +4,5 @@ private void update() {
     Quaternion lookdir = Quaternion.LookRotation(dir);
     
     if (grapplePoint == Vector3.zero) {
-       
+         lookdir = tranform.parent.rotation;
+}
