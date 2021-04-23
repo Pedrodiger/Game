@@ -1,9 +1,0 @@
-private void update() {
-    Vector3 grapplePoint = PlayerMovement.Instance.GetGrapplePoint();
-    Vector3 dir = (Playermovement.Instance.GetGrapplePoint() - tranform.position).normalized;
-    Quaternion lookdir = Quaternion.LookRotation(dir);
-    
-    if (grapplePoint == Vector3.zero) {
-         lookdir = tranform.parent.rotation;
-}
-tranform.rotation = Quaternion.Slerp(a:tranform.rotation, b:lookdir, t:Time.deltaTime * speed);
