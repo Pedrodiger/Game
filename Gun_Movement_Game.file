@@ -1,1 +1,4 @@
-
+Vector3 offset = Playermovement.Instance.FindVelRelativeToLook() * posOffset;
+float fallspeed = PlayerMovement.Instance.GetFallSpeed() * posOffset;
+Vector3
+tranform.localPositison = Vector3.SmoothDamp(current:tranform.localPositison, target: desiredPos, currentVelocity
